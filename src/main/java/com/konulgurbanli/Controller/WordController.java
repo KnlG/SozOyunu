@@ -62,18 +62,18 @@ public class WordController {
         return wordService.getWordById(id);
     }
 
-    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
-    public void deleteWordById( @PathVariable("id") int id){
-        wordService.deleteWordById(id);
-    }
-
-    @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void updateWord(@RequestBody Word word){
-        wordService.updateWord(word);
-    }
-
-    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void insertWord (@RequestBody Word word){
-        wordService.insertWord(word);
-    }
+//    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
+//    public void deleteWordById( @PathVariable("id") int id){
+//        wordService.deleteWordById(id);
+//    }
+//
+//    @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+//    public void updateWord(@RequestBody Word word){
+//        wordService.updateWord(word);
+//    }
+//
+//    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+//    public void insertWord (@RequestBody Word word){
+//        wordService.insertWord(word);
+//    }
 }
